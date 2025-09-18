@@ -53,7 +53,20 @@ export default {
         },
         navy: {
           deep: "hsl(var(--navy-deep))",
+          medium: "hsl(var(--navy-medium))",
           light: "hsl(var(--navy-light))",
+        },
+        cyan: {
+          bright: "hsl(var(--cyan-bright))",
+        },
+        blue: {
+          dark: "hsl(var(--blue-dark))",
+        },
+        green: {
+          brand: "hsl(var(--green-brand))",
+        },
+        orange: {
+          brand: "hsl(var(--orange-brand))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
