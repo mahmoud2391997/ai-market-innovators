@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* AiGentic Group Design System - Professional Financial Technology Branding */
+/* AiGentic Group Brand Colors - Extracted from Brand Guidelines */
 
 @layer base {
   :root {
@@ -18,20 +18,20 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 39% 11%;
 
-    /* Primary Brand - Deep Professional Navy */
-    --primary: 220 39% 11%;
+    /* Primary Brand - Deep Navy Blue (R=27 G=20 B=100) */
+    --primary: 243 67% 24%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Sophisticated Gray */
+    /* Secondary - Light Blue Gray */
     --secondary: 220 14% 96%;
-    --secondary-foreground: 220 39% 11%;
+    --secondary-foreground: 243 67% 24%;
 
     /* Muted Tones */
     --muted: 220 14% 96%;
     --muted-foreground: 220 9% 46%;
 
-    /* Accent - AI Technology Blue */
-    --accent: 199 89% 48%;
+    /* Accent - Bright Brand Blue (R=63 G=169 B=245) */
+    --accent: 207 90% 60%;
     --accent-foreground: 0 0% 100%;
 
     /* Destructive States */
@@ -41,21 +41,30 @@
     /* Borders & Inputs */
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 199 89% 48%;
+    --ring: 207 90% 60%;
 
-    /* Custom AI-Tech Colors */
-    --electric: 199 89% 48%;
+    /* Custom Brand Colors */
+    --electric: 207 90% 60%; /* R=63 G=169 B=245 */
     --electric-foreground: 0 0% 100%;
-    --navy-deep: 220 39% 11%;
+    --navy-deep: 243 67% 24%; /* R=27 G=20 B=100 */
+    --navy-medium: 237 51% 38%; /* R=46 G=49 B=146 */
     --navy-light: 220 14% 96%;
-    --gradient-primary: linear-gradient(135deg, hsl(220 39% 11%) 0%, hsl(220 30% 18%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(199 89% 35%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(220 39% 11%) 0%, hsl(220 30% 18%) 50%, hsl(199 89% 48%) 100%);
+    --cyan-bright: 194 81% 52%; /* R=41 G=171 B=226 */
+    --blue-dark: 213 100% 37%; /* R=0 G=113 B=188 */
+    --green-brand: 97 48% 53%; /* R=122 G=201 B=67 */
+    --orange-brand: 28 100% 56%; /* R=255 G=147 B=30 */
     
-    /* Shadows */
-    --shadow-premium: 0 25px 50px -12px hsl(220 39% 11% / 0.25);
-    --shadow-card: 0 4px 6px -1px hsl(220 39% 11% / 0.1);
-    --shadow-glow: 0 0 40px hsl(199 89% 48% / 0.3);
+    /* Brand Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(243 67% 24%) 0%, hsl(237 51% 38%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(207 90% 60%) 0%, hsl(194 81% 52%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(243 67% 24%) 0%, hsl(237 51% 38%) 50%, hsl(207 90% 60%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(207 90% 60% / 0.1) 0%, hsl(194 81% 52% / 0.05) 100%);
+    
+    /* Shadows with Brand Colors */
+    --shadow-premium: 0 25px 50px -12px hsl(243 67% 24% / 0.25);
+    --shadow-card: 0 4px 6px -1px hsl(243 67% 24% / 0.1);
+    --shadow-glow: 0 0 40px hsl(207 90% 60% / 0.3);
+    --shadow-accent: 0 0 30px hsl(194 81% 52% / 0.4);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -81,43 +90,44 @@
   }
 
   .dark {
-    /* Dark Mode - Premium Financial Theme */
-    --background: 220 39% 11%;
+    /* Dark Mode - Brand Color Theme */
+    --background: 243 67% 24%;
     --foreground: 220 14% 96%;
 
-    --card: 220 30% 18%;
+    --card: 237 51% 38%;
     --card-foreground: 220 14% 96%;
 
-    --popover: 220 30% 18%;
+    --popover: 237 51% 38%;
     --popover-foreground: 220 14% 96%;
 
-    --primary: 199 89% 48%;
-    --primary-foreground: 220 39% 11%;
+    --primary: 207 90% 60%;
+    --primary-foreground: 243 67% 24%;
 
-    --secondary: 220 30% 18%;
+    --secondary: 237 51% 38%;
     --secondary-foreground: 220 14% 96%;
 
-    --muted: 220 30% 18%;
+    --muted: 237 51% 38%;
     --muted-foreground: 220 9% 46%;
 
-    --accent: 199 89% 48%;
-    --accent-foreground: 220 39% 11%;
+    --accent: 207 90% 60%;
+    --accent-foreground: 243 67% 24%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 30% 18%;
-    --input: 220 30% 18%;
-    --ring: 199 89% 48%;
+    --border: 237 51% 38%;
+    --input: 237 51% 38%;
+    --ring: 207 90% 60%;
     
-    /* Dark Mode Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(220 39% 11%) 0%, hsl(220 30% 18%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(199 89% 35%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(220 39% 11%) 0%, hsl(220 30% 18%) 50%, hsl(199 89% 48%) 100%);
+    /* Dark Mode Brand Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(243 67% 24%) 0%, hsl(237 51% 38%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(207 90% 60%) 0%, hsl(194 81% 52%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(243 67% 24%) 0%, hsl(237 51% 38%) 50%, hsl(207 90% 60%) 100%);
     
     --shadow-premium: 0 25px 50px -12px hsl(0 0% 0% / 0.5);
     --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.3);
-    --shadow-glow: 0 0 40px hsl(199 89% 48% / 0.4);
+    --shadow-glow: 0 0 40px hsl(207 90% 60% / 0.4);
+    --shadow-accent: 0 0 30px hsl(194 81% 52% / 0.5);
   }
 }
 
